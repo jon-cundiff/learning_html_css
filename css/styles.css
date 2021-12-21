@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+
+body {
+    background-image: url("/images/small-kitty.gif");
+    /* background-image: url("/images/bg.svg"); */
+    background-repeat: repeat;
+    padding: 0 30px;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+header,
+main {
+    background: rgba(240, 240, 240, 0.89);
+    padding: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0.8);
+}
+
+.menu-left {
+    list-style: none;
+    display: inline;
+}
+
+.menu-left li,
+.menu-right {
+    display: inline;
+    padding: 5px 15px;
+}
+
+nav li a,
+.menu-right a {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+
+.menu-right {
+    display: inline;
+    position: relative;
+}
+
+.menu-right ul {
+    position: absolute;
+    list-style: none;
+    display: none;
+    right: 0;
+}
+
+.menu-right:hover ul {
+    display: inline;
+    padding: 3px;
+    background: rgba(250, 250, 250, 0.9);
+}
+
+.menu-right ul li {
+    padding: 10px;
+}
+
+.menu-left li:hover,
+.menu-right:hover,
+.menu-right li:hover {
+    background: yellow;
+}
+
+figure {
+    display: inline;
+    margin: 0;
+}
+
+figure > img {
+    width: 30%;
+    border: 2px dashed navy;
+}
